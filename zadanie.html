@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Adam Ancukiewicz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body {
+        background-image: url(https://amusd.net/wp-content/uploads/2021/03/Wallpaper-Background-Full-HD.jpg);
+    }
+
+</style>
+
+<script>
+
+            function jeden(){
+                let numer1 = parseInt(document.getElementById('numer1').value)
+                let numer2 = parseInt(document.getElementById('numer2').value)
+
+                let wynik = (numer1 + numer2);
+                document.getElementById("pobrane").innerHTML = "Wynik tego dodawania to" + " " + wynik;
+            }
+            function dwa(){
+                let numer1 = document.getElementById("numer1").value;
+                let numer2 = document.getElementById("numer2").value;
+
+                let wynik = numer1 - numer2;
+                document.getElementById("pobrane").innerHTML = "Wynik tego odejmowania to" + " " + wynik;
+            }
+
+</script>
+
+</head>
+<body>
+
+<div style="border: 2px solid rgb(116, 91, 255); border-radius: 20px 20px; background-color: rgb(133, 58, 255); width: 900px; height: 300px; text-align: center; margin-left: auto; margin-right: auto;
+                         font-size: 28px; margin-top: 80px;">
+
+<div style="margin-top: 85px; font-family: 'Roboto Condensed', sans-serif;">
+<label for="number1">Pierwsza liczba</label>
+<input type="number" id="numer1"/>
+<br>
+<label for="">Druga liczba</label>
+<input type="number" id="numer2"/>
+<br>
+
+<button class="btn btn-warning" type="button" onclick="jeden()">Dodaj</button>
+<button class="btn btn-warning" type="button" onclick="dwa()">Odejmij</button>
+</div>
+
+
+
+</div>
+
+
+<div style="margin-left: auto; margin-right: auto; border: 2px solid rgb(151, 76, 250); border-radius: 50px 20px; text-align: center; font-size: 30px; color: rgba(0, 0, 0, 0.637); background-color: rgb(199, 199, 199); margin-top: 10px; width: 900px; height: 70px;" id="pobrane" ></div>
+
+</body>
+
+</html>
